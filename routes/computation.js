@@ -10,13 +10,13 @@ router.get('/',function(req,res,next)
   if (x==undefined){
   x=y;
   }
-  res.render ('computation',{values: `f[Math.pow] applied to (${x}) is ${Math.pow(x)}`})
+  res.render ('computation',{values: `f[Math.sign] applied to (${x}) is ${Math.sign(x)}`})
 
 }
 )
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render ('computation',{values: `f[Math.pow] applied to (${x}) is ${Math.pow(x)}`})
+  res.render ('computation',{values: `f[Math.sign] applied to (${x}) is ${Math.sign(x)}`})
 
 res.end();
 });
