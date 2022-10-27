@@ -11,15 +11,9 @@ router.get('/',function(req,res,next)
   x=y;
   }
   res.render ('computation',{values: `f[Math.sign] applied to (${x}) is ${Math.sign(x)}`})
-
+  res.end();
 }
-)
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render ('computation',{values: `f[Math.sign] applied to (${x}) is ${Math.sign(x)}`})
-
-res.end();
-});
+);
 
 
 module.exports = router;
