@@ -10,7 +10,7 @@ router.get('/',function(req,res,next)
   if (x==undefined){
   x=y;
   }
-  res.render ('computation',{values: `f[Math.sign] applied to (${x}) is ${Math.sign(x)}`})
+  res.render ('computation',{title: `f[Math.tanh] applied to [${x}] is [${Math.tanh(x)}]`})
   res.end();
 }
 );
